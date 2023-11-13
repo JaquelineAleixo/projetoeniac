@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Produtos</title>
+    <link rel="stylesheet" href="styles-cadastro.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+          <img src="logo.png" alt="Logo" class="logo">
+          <div class="header-right">
+              <a href="index.html">HOME</a>
+              <a href="cadastro.html">CADASTRO</a>
+          </div>
+      </div>       
+      </header>
+<!-- Tela de Login -->
+<div id="login-section"> 
+        <form id="login-form">
+            <div class="container"> 
+            <h2>Login do Mercado</h2>
+            <label for="market-username">Usuário:</label>
+            <input type="text" id="market-username">
+    
+            <label for="market-password">Senha:</label>
+            <input type="password" id="market-password">
+    
+            <button type="submit">Entrar</button>
+        </div>
+        </form>
+    
+</div>
+
+<!-- Formulário de Cadastro de Produtos (inicialmente oculto) -->
+<div id="product-cadastro-section" style="display: none;">
+    <form id="product-cadastro-form">
+    <div class="container">
+        <h2>Cadastro de Produtos</h2>
+      
+            <label for="product-select">Produto:</label>
+            <select id="product-select"></select>
+    
+            <label for="brand-input">Marca:</label>
+            <input type="text" id="brand-input">
+    
+            <label for="price-input">Preço:</label>
+            <input type="text" id="price-input">
+    
+            <label for="market-select">Mercado:</label>
+            <select id="market-select">
+                <option>Mercado X</option>
+                <option>Mercado Y</option>
+            </select>
+    
+            
+            <label><button type="submit">Cadastrar</button></label>
+        
+    </div>
+</form>
+</div>
+
+<script src="variavel.js"></script>
+<script src="script-cadastro.js"></script>
+
+</body>
+</html>

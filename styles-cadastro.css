@@ -1,0 +1,101 @@
+    
+    body, html {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    
+    .header {
+        background-color: #FDEEC5;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        box-sizing: border-box; /* garante que a padding não adicione largura extra */
+    }   
+
+
+    .header img.logo {
+        width: 100px; /* ou a dimensão que desejar para o logo */
+        height: 70px; /* ajuste conforme o tamanho da sua logo */
+        padding: 10px;
+    }
+    
+    .header-right {
+        display: flex;
+    }
+    
+    .header a {
+        color: #388E3C; /* Verde */
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 30px; /* aumente o tamanho da fonte conforme necessário */
+    }
+    
+    .header a:hover {
+        color: #2a682d; /* Verde */
+    }   
+
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.container {
+    max-width: 500px;
+    margin: 30px auto;
+    border: #388E3C 2px solid;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 70%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+select {
+    width: 75%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+button, .redirect-button {
+    padding: 12px 25px;
+    color: #fff;
+    background-color: #FFA000; /* Laranja */
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    align-self: center; /* Centraliza o botão */
+}
+
+/* Estilos adicionais para centralizar e alinhar os elementos */
+label, input, select, button {
+    align-self: center;
+}
+
+
+button:hover, .redirect-button:hover {
+    background-color: #FB8C00; /* Laranja mais claro */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+

@@ -1,0 +1,168 @@
+    
+    body, html {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+    }
+    
+    .header {
+        background-color: #FDEEC5;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        box-sizing: border-box; /* garante que a padding não adicione largura extra */
+    }   
+
+
+    .header img.logo {
+        width: 100px; /* ou a dimensão que desejar para o logo */
+        height: 70px; /* ajuste conforme o tamanho da sua logo */
+        padding: 10px;
+    }
+    
+    .header-right {
+        display: flex;
+    }
+    
+    .header a {
+        color: #388E3C; /* Verde */
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 30px; /* aumente o tamanho da fonte conforme necessário */
+    }
+    
+    .header a:hover {
+        color: #2a682d; /* Verde */
+    }   
+
+    
+h1, h2, footer {
+    font-family: 'Roboto Slab', serif;
+}
+
+.search-container {
+    margin-top: 20px;
+    text-align: center;
+    
+}
+
+#search-input {
+    padding: 10px;
+    width: 50%;
+    font-size: 1em;
+    border-radius: 20px;
+    border: 1px solid #ddd;
+}
+
+#search-btn {
+    padding: 10px 15px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #FFA000; /* Laranja */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    margin-left: 10px;
+}
+
+#products-list {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+li {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    list-style-type: none;
+    padding: 15px;
+    margin-bottom: 10px;
+    flex: 1 1 calc(25% - 20px);  
+    transition: box-shadow 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+li:hover {
+    box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+#products-list {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px 50px; /* Adiciona um espaço entre os cards */
+}
+
+/* Estilos para a janela modal */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    background-color: rgba(0,0,0,0.3); 
+}
+
+.modal-content {
+    background-color: #fff;
+    border-top: 5px solid #FFA000; /* Laranja */
+    margin: 10% auto;
+    padding: 30px;
+   
+    width: 60%;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+.modal h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+#modalProductDetails {
+    list-style-type: none;
+    padding: 0;
+}
+
+.close-btn {
+    color: #388E3C; /* Verde */
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-btn:hover, .close-btn:focus {
+    color: #2a682d; /* Verde */
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.redirect-button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    background-color: #FFA000; /* Laranja */
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+button:hover, .redirect-button:hover, #search-btn:hover {
+    background-color: #FB8C00; /* Laranja mais claro */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
